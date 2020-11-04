@@ -27,4 +27,10 @@ class LevelLabel: UILabel {
     override func layerWillDraw(_ layer: CALayer) {
         print("Drawing level \(level)")
     }
+    
+    override func draw(_ rect: CGRect) {
+        print("Drawing label \(level)")
+        super.draw(rect)
+        print("Drawn label \(level)")
+    }
 }
